@@ -98,6 +98,7 @@ label {
 
 /* ========================= Pointers Start */
 .pointer--container{
+    align-items: center;
     display: flex;
     width: 80vw;
     background-color: #f2f2f2;

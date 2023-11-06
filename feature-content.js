@@ -1,3 +1,5 @@
+import {LiaRobotSolid, LiaLeafSolid, LiaDollarSignSolid} from "react-icons/lia"
+
 export default {
     cards: [{
         heading: "Revolutionize Cleaning",
@@ -21,14 +23,17 @@ export default {
         {
             heading: "AI Mastery",
             point: "Smartest cleaning routines.",
+            icon: <LiaRobotSolid />,
         },
         {
             heading: "Eco Warriors",
             point: "Reduced Emissions and Waste.",
+            icon: <LiaLeafSolid />,
         },
         {
             heading: "Cost Effective",
             point: "Made for the cost conscious audience.",
+            icon: <LiaDollarSignSolid />,
         },
     ],
 }

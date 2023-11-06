@@ -19,7 +19,7 @@ function App() {
   })
 
   const pointerComponents = pointers.map((point) => {
-    return <Feature key={nanoid()} point={point.point} heading={point.heading}/>
+    return <Feature key={nanoid()} icon={point.icon} point={point.point} heading={point.heading}/>
   })
 
   return (
