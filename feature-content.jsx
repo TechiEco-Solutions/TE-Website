@@ -23,17 +23,17 @@ export default {
         {
             heading: "AI Mastery",
             point: "Smartest cleaning routines.",
-            icon: <LiaRobotSolid />,
+            icon: <LiaRobotSolid color="#f2f2f2" fontSize="3rem"/>,
         },
         {
             heading: "Eco Warriors",
             point: "Reduced Emissions and Waste.",
-            icon: <LiaLeafSolid />,
+            icon: <LiaLeafSolid color="#f2f2f2" fontSize="3rem"/>,
         },
         {
             heading: "Cost Effective",
             point: "Made for the cost conscious audience.",
-            icon: <LiaDollarSignSolid />,
+            icon: <LiaDollarSignSolid color="#f2f2f2" fontSize="3rem"/>,
         },
     ],
 }
