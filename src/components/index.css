@@ -3,14 +3,75 @@
 /* Inter Tight Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800&display=swap');
 
-:root{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter Tight', sans-serif;
+}
+:root{
+font-family: 'Inter Tight', sans-serif;
+}
+/* ========================= Navbar Start ================================*/
+nav{
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    z-index: 10;
+    opacity: calc(0.8);
+    box-shadow: 5px 1px 10px  rgb(83, 87, 90)
 }
 
-/* ========================= Modal Start */
+.logo img{
+    height: 40%;
+    width: 25%;
+}
+.navbar{
+    width: 70%;  
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link{
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 1rem;
+}
+
+.nav-link:hover{
+    color: rgb(5, 113, 255);
+    cursor: pointer;
+}
+.btn_signup{
+    border: 1px solid gray;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    color: #faf7f7;
+    background-color: rgb(16, 79, 239);
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
+.btn_signup:hover{
+    border: 1px none gray;
+    background-color: #fffafa;
+    color: #0346ff;
+    transform: scale(0.82);
+    transition: all 0.5s;
+    box-shadow: rgba(0,0,0,0.16) 0px 1px 4px, rgb(0, 42, 251) 0px 0px 0px 3px;
+}
+nav > div{
+    display: flex;
+}
+/* ========================= Modal Start ================================*/
 .mainModal--container{
     display: flex;
     justify-content: flex-end;
@@ -76,8 +137,9 @@ label {
 }
 
 /* ========================= Modal End */
+/* ========================= Navbar End */
 
-/* ========================= FeatureCards Start */
+/* ========================= FeatureCards Start ====================================*/
 .card--container{
     display: flex;
     flex-direction: row;
@@ -94,9 +156,9 @@ label {
     margin-right: 5rem;
 }
 
-/* ========================= FeatureCards End */
+/* ========================= FeatureCards End*/
 
-/* ========================= Pointers Start */
+/* ========================= Pointers Start ============================ */
 .pointer--container{
     align-items: center;
     display: flex;
@@ -122,3 +184,136 @@ label {
     width: 4rem;
     height: 4rem;
 }
+/* ========================= Pointers End*/
+
+/* ========================= Footer Start============================*/
+.main-container{
+    height: 35vh;
+    background:rgb(50, 50, 50);
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+    
+}
+.container{
+    flex: 1;
+    /* border: 1px solid grey; */
+    padding: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+/* first container styling */
+.footer-logo{
+    height: 5rem;
+    width: 10rem;
+    object-fit:unset;
+    border-radius: 20%;
+    background: rgb(50, 50, 50)
+}
+.social-medias{
+    display: flex;
+    margin-top: 4px;
+    margin-left: 15px;
+    gap: 2rem;
+}
+.location-icon{
+    height: 30px;
+    width: 30px;
+}
+.line{
+    width: 9rem;
+    height: 2px;
+    margin-top: 7px;
+    background: rgb(20, 20, 20);
+}
+.social{
+    margin-left: 1px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    
+    
+}
+.social:hover{
+    transform: scale(1.6);
+    color: #ff004f;
+}
+
+/* second container styling */
+
+.com-name {
+    color: rgb(14, 133, 14);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-right:26px;
+}
+.com-address{
+    font-size: 0.8em;
+    
+}
+.com-address-title{
+    display: flex;
+    gap: 6px;
+    margin-left: 40px;
+    
+}
+.location-icon{
+    margin-top: 10px;
+    margin-left: 4px;
+}
+.location-heading{
+    margin-right: 1px;
+    /* background: rgb(40, 40, 40); */
+}
+.find{
+    color: #ff004f;
+}
+.com-address{
+    margin-top: 2px;
+}
+.com-address2{
+    font-size: 0.8em;
+}
+.com-address3{
+    font-size: 0.8em;
+}
+
+.address-lines{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 4.5rem;
+    color: #fff;
+}
+/* third container styling */
+.third-container{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+ 
+}
+.email{
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+}
+.phone{
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+}
+.Contact{
+    /* margin-right: 6rem; */
+    color:#ff004f;
+}
+.phone{
+    margin-right: 0.8rem;
+}
+
+/* ========================= Footer End*/
