@@ -8,6 +8,9 @@ import Feature from "./components/Feature"
 import { nanoid } from "nanoid"
 import Footer from "./components/Footer"
 
+
+import ContactUsCard from "./components/Contactform"
+
 function App() {
 
   const { cards, pointers } = Content
@@ -15,6 +18,7 @@ function App() {
   const cardComponents = cards.map((card) => {
     return <FeatureCard
       key={nanoid()}
+      idx={card.no}
       heading={card.heading}
       paragraph={card.paragraph}
       image={card.image}
@@ -25,20 +29,28 @@ function App() {
     return <Feature key={nanoid()} icon={point.icon} point={point.point} heading={point.heading} />
   })
 
-  return (
-    <div>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          {/* <Route path="/about" Component={About} /> */}
-        </Routes>
+  function Home() {
+    return (
+      <div>
         {cardComponents}
         {pointerComponents}
+      </div>
+    );
+  }
+
+  return (
+    <BrowserRouter>
+        <Navbar/>
+        <Routes>
+                  <Route path="/" exact element ={<Home/>} />
+                  <Route path="/home"  element ={<Home/>} />
+                  <Route path="/contact" element={<ContactUsCard/>} />
+        </Routes>
         <Footer />
       </BrowserRouter>
-
-    </div>
   )
 }
 
 export default App
+
+
