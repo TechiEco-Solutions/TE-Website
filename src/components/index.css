@@ -23,7 +23,7 @@ nav{
     background-color: rgb(255, 255, 255);
     top: 0;
     z-index: 10;
-    opacity: calc(0.8);
+    opacity: calc(0.98);
     box-shadow: 5px 1px 10px  rgb(83, 87, 90)
 }
 
@@ -95,6 +95,15 @@ nav > div{
     max-width: 30rem;
     background-color: #fff;
 }
+.close_icon{
+    margin-left: 23rem;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.tag_line{
+    margin-bottom: 1.5rem;
+}
 .modal-btn{
     border: 1px solid gray;
     padding: 0.5rem 1.2rem;
@@ -105,6 +114,12 @@ nav > div{
     cursor: pointer;
     transform: scale(0.8);
 }
+.subs_btn{
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
+    margin-top: 1rem;
+}
 .modal-btn:hover{
     border: 1px none gray;
     background-color: #000000;
@@ -113,7 +128,6 @@ nav > div{
     transition: all 0.5s;
     box-shadow: rgba(0,0,0,0.16) 0px 1px 4px, rgb(51,51,51) 0px 0px 0px 3px;
 }
-
   
 label {
     margin: 0 15px 0 0;
@@ -229,7 +243,6 @@ label {
 }
 .container{
     flex: 1;
-    /* border: 1px solid grey; */
     padding: 20px;
 }
 .container{
@@ -238,7 +251,7 @@ label {
 }
 /* first container styling */
 .footer-logo{
-    height: 5rem;
+    height: 4rem;
     width: 10rem;
     object-fit:unset;
     border-radius: 20%;
@@ -246,37 +259,35 @@ label {
 }
 .social-medias{
     display: flex;
-    margin-top: 4px;
-    margin-left: 15px;
+    margin-top: 15px;
     gap: 2rem;
 }
 .location-icon{
-    height: 30px;
-    width: 30px;
+    height: 23px;
+    width: 23px;
+    margin-top: 2px;
 }
 .line{
-    width: 9rem;
+    width: 10rem;
     height: 2px;
-    margin-top: 7px;
+    margin-top: 15px;
     background: rgb(20, 20, 20);
 }
 .social{
     margin-left: 1px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
-    
-    
 }
 .social:hover{
-    transform: scale(1.6);
+    transform: scale(1.1);
     color: #ff004f;
 }
 
 /* second container styling */
 
 .com-name {
-    color: rgb(14, 133, 14);
-    font-size: 1.2em;
+    color: rgb(2, 126, 31);
+    font-size: 1.5em;
     margin-bottom: 10px;
     margin-right:26px;
 }
@@ -290,16 +301,13 @@ label {
     margin-left: 40px;
     
 }
-.location-icon{
-    margin-top: 10px;
-    margin-left: 4px;
-}
 .location-heading{
-    margin-right: 1px;
+    margin-right:2px 1px;
     /* background: rgb(40, 40, 40); */
 }
 .find{
-    color: #ff004f;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
 }
 .com-address{
     margin-top: 2px;
@@ -320,7 +328,6 @@ label {
 }
 /* third container styling */
 .third-container{
-    margin-top: 32px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -337,9 +344,13 @@ label {
     text-decoration: none;
     color: #fff;
 }
+.mail_icon, .phone_icon{
+    height: 20px;
+    width: 20px;
+}
 .Contact{
     /* margin-right: 6rem; */
-    color:#ff004f;
+    color:#ffffff;
 }
 .phone{
     margin-right: 0.8rem;

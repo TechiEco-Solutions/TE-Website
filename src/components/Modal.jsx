@@ -1,16 +1,18 @@
 import { useState } from "react";
+import { FaCircleXmark } from "react-icons/fa6";
 
 export default function Modal() {
   const [showModal, setShowModal] = useState(false);
-
+  
   return (
     <div className="mainModal--container">
       {showModal ? (
         <section>
           <div className="modal-wrapper" onClick={() => setShowModal(true)}></div>
           <div className="modal-container">
-            <h2>Join the Waiting List!</h2>
-            <p>
+            <FaCircleXmark className="close_icon" onClick={() => setShowModal(false)}/>
+            <h2 className="tag_line">Join the Waiting List!</h2>
+            <p className="tag_line">
               Join our mailing list to get notified whenever our newest products launch.
             </p>
             <form>
@@ -32,8 +34,7 @@ export default function Modal() {
                   className="input-field"
                 />
               </div>
-              <div></div>
-              <button type="submit" className="modal-btn" onClick={() => setShowModal(false)}>
+              <button type="submit" className="modal-btn subs_btn" onClick={() => setShowModal(false)}>
                 Subscribe
               </button>
             </form>
