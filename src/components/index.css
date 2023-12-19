@@ -1,5 +1,4 @@
 /* This is the CSS file for all our components */
-@import 'typeface-poppins';
 /* Inter Tight Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800&display=swap');
 
@@ -34,7 +33,7 @@ nav{
 .navbar{
     width: 70%;  
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .nav-link{
@@ -183,12 +182,10 @@ label {
     
 }
 
-
 .pointer--container{
     margin-left: 20px;
     
 }
-
 
 .card--image{
     object-fit: cover;
@@ -202,14 +199,22 @@ label {
 /* ========================= FeatureCards End*/
 
 /* ========================= Pointers Start ============================ */
+.pointer-container-parent{
+    display: flex;
+    justify-content: center;
+}
+
 .pointer--container{
     align-items: center;
     display: flex;
     width: 80vw;
     background-color: #f2f2f2;
     margin-bottom: 1rem;
-    padding: 1rem 1rem 1rem 1.5rem;
+    padding: .7rem .7rem .7rem 1rem;
     border-radius: 5rem;
+}
+.point--heading{
+    line-height: 2rem;
 }
 
 .point--content{
@@ -224,8 +229,8 @@ label {
     align-items: center;
     justify-content: center;
     border-radius: 100%;
-    width: 4rem;
-    height: 4rem;
+    width: 4.5rem;
+    height: 4.5rem;
 }
 /* ========================= Pointers End*/
 
@@ -235,15 +240,10 @@ label {
     background:rgb(50, 50, 50);
     margin: auto;
     margin-top: 2rem;
+    padding: 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-   
-    
-}
-.container{
-    flex: 1;
-    padding: 20px;
+    justify-content: space-between;   
 }
 .container{
     display: flex;
@@ -324,6 +324,7 @@ label {
     flex-direction: column;
     align-items: flex-start;
     margin-left: 4.5rem;
+    line-height: 1.5rem;
     color: #fff;
 }
 /* third container styling */
@@ -332,7 +333,7 @@ label {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.6rem;
- 
+    margin-right: 2rem;
 }
 .email{
     letter-spacing: 1px;
@@ -460,11 +461,9 @@ label {
 
   .info-box p {
     margin: 30px 0; 
-    font-family: 'Poppins', sans-serif; 
+    line-height: 1.5rem;
   }
-  .text-contact{
-    font-family: 'Poppins', sans-serif; 
-  }
+
   .contact-details::before {
         content: '';
         position: absolute;
@@ -478,9 +477,4 @@ label {
   }
 
 /* ============= Contact form ended ================= */
-  
-  
-  
-
-  
   

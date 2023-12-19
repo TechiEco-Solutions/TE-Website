@@ -2,7 +2,9 @@ import { HiOutlineChevronRight } from "react-icons/hi";
 
 export default function Feature(props){
     return (
-        <section className="pointer--container">
+        <section className="pointer-container-parent">
+            <div className="pointer--container">
+
             <span className="point--logo">
             {props.icon}
             </span>
@@ -11,6 +13,7 @@ export default function Feature(props){
             <p className="point--pointer">{props.point}</p>
             </div>
             <HiOutlineChevronRight fontSize="3rem"/>
+            </div>
         </section>
     )
 }

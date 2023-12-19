@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { FiPhoneCall } from 'react-icons/fi';
 import { RiInstagramFill } from 'react-icons/ri';
@@ -14,7 +13,7 @@ const ContactUsCard = () => {
   };
 
   const labelStyle = {
-    // fontFamily: 'Inter Tight', 
+    fontFamily: 'Inter Tight', 
     
     color: 'black', 
    
@@ -43,13 +42,13 @@ const ContactUsCard = () => {
           </p>
         </div>
         <div className="social-icons">
-          <a href="https://twitter.com/techiEco_S" className="social-link">
+          <a href="https://twitter.com/techiEco_S" target='_blank' rel="noreferrer" className="social-link">
             <FaTwitter className="social" style={{ color: 'white' }} />
           </a>
-          <a href="https://www.instagram.com/techieco_solutions/" className="social-link">
+          <a href="https://www.instagram.com/techieco_solutions/" target='_blank' rel="noreferrer" className="social-link">
             <RiInstagramFill className="social" style={{ color: 'white' }} />
           </a>
-          <a href='https://www.linkedin.com/company/96943280/admin/feed/posts/' className="social-link">
+          <a href='https://www.linkedin.com/company/96943280/admin/feed/posts/' target='_blank' rel="noreferrer" className="social-link">
           <FaLinkedin className='social' style={{ color: "white" }} /></a>
         </div>
       </div>
