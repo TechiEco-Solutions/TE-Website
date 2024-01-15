@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Modal from "./components/Modal"
@@ -10,8 +11,28 @@ import Footer from "./components/Footer"
 
 
 import ContactUsCard from "./components/Contactform"
+import FooterMobile from "./components/Footermobile"
+import AboutUsPage from './components/AboutUs';
+
+
+
 
 function App() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenWidth = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkScreenWidth();
+
+    window.addEventListener('resize', checkScreenWidth);
+
+    return () => {
+      window.removeEventListener('resize', checkScreenWidth);
+    };
+  }, []);
 
   const { cards, pointers } = Content
 
@@ -45,12 +66,16 @@ function App() {
                   <Route path="/" exact element ={<Home/>} />
                   <Route path="/home"  element ={<Home/>} />
                   <Route path="/contact" element={<ContactUsCard/>} />
+                  <Route path="/about" element={<AboutUsPage/>} />
         </Routes>
-        <Footer />
+        {isMobile ? <FooterMobile /> : <Footer />}
+        {/* <Footer/> */}
       </BrowserRouter>
   )
 }
 
 export default App
+
+
 
 
