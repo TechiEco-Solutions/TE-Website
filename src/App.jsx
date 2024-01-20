@@ -13,6 +13,7 @@ import Footer from "./components/Footer"
 import ContactUsCard from "./components/Contactform"
 import FooterMobile from "./components/Footermobile"
 import AboutUsPage from './components/AboutUs';
+import Header from './components/Hero';
 
 
 
@@ -53,6 +54,7 @@ function App() {
   function Home() {
     return (
       <div>
+        <Header/>
         {cardComponents}
         {pointerComponents}
       </div>
