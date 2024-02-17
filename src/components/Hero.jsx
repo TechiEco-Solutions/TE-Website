@@ -10,7 +10,7 @@ const Header = () => {
       </div>
 
       <div className="video-content">
-        <video className="vedios"
+        <video
           src="Hero-video.mp4"
           autoPlay
           muted

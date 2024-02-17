@@ -8,7 +8,7 @@ import FeatureCard from "./components/FeatureCard"
 import Feature from "./components/Feature"
 import { nanoid } from "nanoid"
 import Footer from "./components/Footer"
-
+import Hero from "./components/Hero"
 
 import ContactUsCard from "./components/Contactform"
 import FooterMobile from "./components/Footermobile"
@@ -54,7 +54,7 @@ function App() {
   function Home() {
     return (
       <div>
-        <Header/>
+        <Hero/>
         {cardComponents}
         {pointerComponents}
       </div>
