@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Navbar from "./components/Navbar"
-import Modal from "./components/Modal"
 import './components/index.css'
 import Content from '../feature-content'
 import FeatureCard from "./components/FeatureCard"
@@ -13,7 +12,6 @@ import Hero from "./components/Hero"
 import ContactUsCard from "./components/Contactform"
 import FooterMobile from "./components/Footermobile"
 import AboutUsPage from './components/AboutUs';
-import Header from './components/Hero';
 
 
 

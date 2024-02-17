@@ -1,4 +1,6 @@
-const Header = () => {
+import hero_video from '../Assets/Hero-video.mp4';
+
+const Hero = () => {
   return (
     <div className=" hero-section">
 
@@ -11,7 +13,7 @@ const Header = () => {
 
       <div className="video-content">
         <video
-          src="Hero-video.mp4"
+          src={hero_video}
           autoPlay
           muted
         />
@@ -22,4 +24,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Hero
