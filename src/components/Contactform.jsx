@@ -22,6 +22,13 @@ const ContactUsCard = () => {
   };
 
   return (
+
+    <div className='contact-heading'>
+      <h2 >Contact Us</h2>
+      <div className='para'>
+        <p>Any questions or remarks? Just write a message to us</p>
+        
+      </div>
     <div className="contact-container">
       <div className="contact-details">
         <div className="text-contact">
@@ -107,6 +114,7 @@ const ContactUsCard = () => {
           </Button>
         </form>
       </div>
+    </div>
     </div>
   );
 };
